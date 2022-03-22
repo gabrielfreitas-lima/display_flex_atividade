@@ -1,15 +1,29 @@
-.container{
+.container1{
     display: flex;
-}
-/*elemento div sendo chamado dentro do escopo*/
-.container div{
-    width: 400px;
-    background-color: orangered;
+    flex-direction: row;
+    flex-direction: column;
 }
 
-/*elemento div sendo chamado fora do escopo*/
-/*a div fora do escopo fica com cor diferente da div dentro do escopo*/
-div{
-    width: 400px;
-    background-color: yellow;
+.container1 div{
+    width: 100%;
+    background-color: orangered;
+    margin: 10px;
+    color: white;
+    text-align: center;
+}
+
+/*duas formas de se fazer o flex-direction*/
+
+.container2{
+    display: flex;
+    flex-flow: row-reverse wrap;
+    max-width: 150px;
+    border: 1px solid black;
+}
+.container2 div{
+    background-color: blueviolet;
+    margin: 10px;
+    width: 50px;
+    text-align: center;
+    color: white;
 }

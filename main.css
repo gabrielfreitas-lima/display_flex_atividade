@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+}
+/*elemento div sendo chamado dentro do escopo*/
+.container div{
+    width: 400px;
+    background-color: orangered;
+}
+
+/*elemento div sendo chamado fora do escopo*/
+/*a div fora do escopo fica com cor diferente da div dentro do escopo*/
+div{
+    width: 400px;
+    background-color: yellow;
+}
